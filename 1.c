@@ -1,24 +1,15 @@
-
 #include<stdio.h>
-void power(int,int);
- 
-void main() 
-{
-    int b,e;
-    printf("Enter the base\n");
-    scanf("%d",&b);
-    printf("Enter the exponent\n");
-    scanf("%d",&e);
-    power(b,e);
+int main() {
+int i,n;
+printf("Enter the number of elements \n");
+scanf("%d",&n);
+int a[n];
+for(i=0;i<n;i++) {
+printf("enter element %d:",i+1);
+scanf("%d",&a[i]);  }
+printf("Entered elements are : ");
+for(i=0;i<n;i++) {
+printf("%d ",a[i]);}
+return 0;
 }
- 
-void power(int b,int e)
-{
-    int power=1;
-    while(e>0)
-    {
-        power=power*b;
-        e--;
-    }
-    printf("The power of the given number is %d",power);
-}
+
