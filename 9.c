@@ -10,7 +10,8 @@ for(i=0;i<n;i++)
 lar=a[0];
 smal=a[0];
 for(i=0;i<n;i++)
-{ if(a[i]<smal)
-{ smal=a[i];   }  }
-printf("smallest element  is %d",smal);
+{ if(a[i]>lar) { 
+    lar=a[i]; 
+} }
+printf("largest element  is %d",lar);
 return 0;}
